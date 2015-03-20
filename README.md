@@ -1,4 +1,10 @@
 # studiocpp-blog
-This is a supporting repository for my Studio C++ blogs.
+For "Studio 12.4 C++11 + Boost" blog entry
 
-Different branches correspond to different blog entries.
+Configuration header, describing Studio C++ in C++03 mode:
+  * user.hpp
+
+Supporting patches:
+  * sunstdlib-removal.patch - getting rid of stlport in toolset=sun config
+  * lockpool.patch - fix for libs/atomic Boost bug
+  * sentry.patch - workaround for Studio bug

@@ -1,0 +1,13 @@
+diff --git a/boost/log/utility/formatting_ostream.hpp b/boost/log/utility/formatting_ostream.hpp
+index a32df35..fcdd373 100644
+--- a/boost/log/utility/formatting_ostream.hpp
++++ b/boost/log/utility/formatting_ostream.hpp
+@@ -121,6 +121,8 @@ public:
+         {
+         }
+ 
++	operator bool() { return base_type::operator bool(); }
++
+         BOOST_DELETED_FUNCTION(sentry(sentry const&))
+         BOOST_DELETED_FUNCTION(sentry& operator= (sentry const&))
+     };
